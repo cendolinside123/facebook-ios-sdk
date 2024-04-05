@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'FBSDKCoreKit_Basics'
-  s.version      = '17.0.0'
+  s.version      = '17.0.1'
   s.summary      = 'The kernal module for the Core Facebook SDK'
 
   s.description  = <<-DESC
@@ -47,8 +47,9 @@ Pod::Spec.new do |s|
   s.library = 'z'
 
   s.source = {
-    http: "https://github.com/facebook/facebook-ios-sdk/releases/download/v#{s.version}/FacebookSDK_Dynamic.xcframework.zip",
+    http: "https://github.com/cendolinside123/facebook-ios-sdk/releases/download/v#{s.version}/FacebookSDK_Dynamic.xcframework.zip",
     sha1: '15fc2c8e2a1cfd2399af85162b4287d7ffe3c939'
   }
   s.vendored_frameworks = 'XCFrameworks/FBSDKCoreKit_Basics.xcframework'
+  s.ios.resource_bundles = {'FBSDKCoreKit_Basics' => ['Sources/FacebookBasics/Resources/PrivacyInfo.xcprivacy']}
 end
